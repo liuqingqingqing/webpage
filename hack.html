@@ -1,0 +1,190 @@
+<!--注释文字 -->
+<!-- 第1行为代码注释标签，代码注释的作用是帮助程序员标注代码的用途，不会直接呈现在网页上，我们会通过这样的方式让大家来了解一个网页 -->
+<!--<!DOCTYPE> 不是html标签，但它会告诉浏览器html的版本，下面这个写法就是html5啦 -->
+<!DOCTYPE html>
+<html>
+<!-- 文档的头部描述了文档的各种属性和信息，包括文档的标题等、Meta以及css等外部链接的引入-->
+<head lang="en">
+    <!-- meta标签定义了网页的一些信息，比如charset是编码格式，http-equiv向浏览器传回一些有用的信息，以帮助正确和精确地显示网页内容，
+    viewport，则定义页面的宽度与打开页面的屏幕宽度的关系等,keywords和description则是SEO的关键，大家可以去研究一下大网站的头部信息 -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="" >
+    <meta name="description" content="">
+    <!-- 网页的title标签会在浏览器中的标题栏上显示（包括微信浏览器）用于告诉用户和搜索引擎这个网页的主要内容是什么。
+    搜索引擎可以通过网页标题，迅速的判断出网页的主题，所以它也是SEO几乎最为关键的信息。
+    每个网页的内容都是不同的，每个网页都应该有一个独一无二的title。-->
+    <title>HackWeek官方网站</title>
+    <!--link 标签通常会引入css或者icon小图标，css样式引入有三种写法，这是其中之一 -->
+    <link href="" rel="stylesheet">
+    <!--script 标签会引入javasript文件，通常情况下，这个会放在网站的尾部 -->
+    <script src=""></script>
+    <!--style标签是网站的css样式，css样式引入有三种写法，这是其中之一 -->
+    <style></style>
+</head>
+<!-- 在<body>和</body>标签之间的内容是网页的主要内容，在网页上要展示出来的页面内容一定要放在body标签中。-->
+<body>
+<!-- 标签标题一共有6个，h1、h2、h3、h4、h5、h6分别为一级标题、二级标题、三级标题、四级标题、五级标题、六级标题。并且依据重要性递减。-->
+<!-- <h1>为标题标签，且是最高的等级，字号也最大。因为h1标签在网页中比较重要，所以一般h1标签被用在网站名称或Logo上-->
+<!-- 标题标签的字体系统会默认加粗 -->
+<h1>HackWeek网页开发</h1>
+<!-- h1,h2,h3,h4,h5,h6,字号会逐步减小，下面<h3>就比上面的<h1>标签要小-->
+<h3>为什么要参加HackWeek活动</h3>
+<!--通常会把文章的段落，网页的文本内容放到<p>标签中 -->
+<!--通常会把文章的段落，网页的文本内容放到<p>标签中 -->
+<p>HackWeek，让参与者在一周的时间里学习一个对自己工作和生活有切实帮助的技能点。我们致力于以最为有效的学习方式（视频+图文介绍+案例+任务性的实战
+    +随时答疑+能够有监督促学机制+线下分组做出产品+活动后长期辅导）让每个人能够享受技术创造所带来的乐趣。
+    <span>技术是群体创造，欢乐而有趣的社交活动。</span>
+</p>
+<!--<blockquote>的作用是引用别人的文本，这个在微信公众号的标签里面经常有用到 -->
+<blockquote>
+    Everybody in this country should learn how to program a computer，because it teaches you how to think.
+    <!--在需要加回车换行的地方加入<br>，<br>标签作用相当于word文档中的回车。 -->
+    <br>
+    <!--<em>和<strong>标签是为了强调一段话中的关键字时使用，它们的语义是强调。<span>标签是没有语义的，它的作用就是为了设置单独的样式用的。 -->
+    <strong>我们国家的每个人都应该学习一点编程，因为它会教你如何思考。</strong> ---<em>Steve Jobs</em>
+</blockquote>
+<!--在信息展示时，有时会需要加一些用于分隔的横线，也就是分割线，这样会使文章看起来整齐些。微信公众号也经常用到。 -->
+<hr>
+<!--为了让网页逻辑更加清晰，我们可以把一些标签放到div里面，div相当于一个集装箱，把分门别类的货物放到不同的div里面，网页逻辑是不是就更清楚啦 -->
+<div>
+    <!--ul li标签主要是对应着word里面的无序列表 -->
+    <ul>
+        <li>系统指导</li>
+        <li>注重实战</li>
+        <li>持续性进阶</li>
+        <li>贴近实际的案例</li>
+    </ul>
+</div>
+<h3>为什么要学网页开发</h3>
+<div>
+    <!--ol li标签主要是对应着word里面的有序列表 -->
+    <ol>
+        <li>职场人士必学基础技能</li>
+        <li>技术爱好者入门首选</li>
+        <li>UI、UX设计师基础技能</li>
+        <li>产品经理/创业者需掌握入门技术</li>
+    </ol>
+</div>
+<h3>线上交流安排</h3>
+<div>
+    <!--<table>…</table>：整个表格以<table>标记开始、</table>标记结束。 -->
+    <table>
+        <!--<tbody>…</tbody>标签可以控制表格分行下载，从而提高下载速度，你可以偷懒不写(这不大规范)，但浏览器会自动给你不写 -->
+        <tbody>
+        <!--<tr>…</tr>：表格的一行，所以有几对tr 表格就有几行。 -->
+        <tr>
+            <!--<th>…</th>：表格的头部的一个单元格，表格表头。 -->
+            <th>日期</th>
+            <th>学习内容</th>
+            <th>固定交流时间</th>
+        </tr>
+        <tr>
+            <!--<td>…</td>：表格的一个单元格，一行中包含几对<td>...</td>，说明一行中就有几列。 -->
+            <td>周一</td>
+            <td>开发环境的搭建</td>
+            <td>20:30-21:30</td>
+        </tr>
+        <tr>
+            <td>周二</td>
+            <td>HTML基础知识</td>
+            <td>20:30-21:30</td>
+        </tr>
+        <tr>
+            <td>周三</td>
+            <td>CSS基础知识</td>
+            <td>20:30-21:30</td>
+        </tr>
+        <tr>
+            <td>周四</td>
+            <td>学习并理解Bootstrap</td>
+            <td>20:30-21:30</td>
+        </tr>
+        <tr>
+            <td>周五</td>
+            <td>引入开源项目</td>
+            <td>20:30-21:30</td>
+        </tr>
+        <tr>
+            <td>周六</td>
+            <td>网页初步设计</td>
+            <td>20:30-21:30</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+<div>
+    <!--使用<a>标签可实现超链接，它在网页制作中可以说是无处不在，只要有链接的地方，就会有这个标签。
+    title属性的作用，鼠标滑过链接文字时会显示这个属性的文本内容。这个属性在实际网页开发中作用很大，主要方便搜索引擎了解链接地址的内容,有利于SEO
+    target="_blank"表示在浏览器新的窗口打开该链接  -->
+    <a href="http://www.huodongxing.com/event/1354743848600" title="HackWeek活动报名" target="_blank">HackWeek零基础一周学会网站开发与网站建设</a>
+    <a href="http://hackweek.huodongxing.com/">立即报名</a>
+</div>
+<br>
+<div>
+    <!--使用<img>标签来插入图片，图像可以是GIF，PNG，JPEG格式的图像文件。
+    src：标识图像的位置；
+    alt：指定图像的描述性文本，当图像不可见时（下载不成功时），可看到该属性指定的文本；
+    title：提供在图像可见时对图像的描述(鼠标滑过图片时显示的文本)；
+    -->
+    <img src="http://hackweek.oss-cn-shanghai.aliyuncs.com/t/img/hackweekbanner.jpg" title="HackWeek网页开发"
+         alt="HackWeek图片" width="300px"  >
+
+</div>
+<br>
+<hr>
+<div>
+    <!--HTML表单(form)可以把浏览者输入的数据传送到服务器端，这样服务器端程序就可以处理表单传过来的数据。
+     post/get 的区别这一部分内容属于后端程序员考虑的问题。action ：浏览者输入的数据被传送到的地方,比如一个PHP页面(save.php)。-->
+    <form method="post" action="save.php">
+        <!--label标签不会向用户呈现任何特殊效果，它的作用是为鼠标用户改进了可用性。如果你在 label 标签内点击文本，就会触发此控件。
+        就是说，当用户单击选中该label标签时，浏览器就会自动将焦点转到和标签相关的表单控件上（就自动选中和该label标签相关连的表单控件上）。 -->
+        <label for="username">用户名:</label>
+        <input type="text"  name="username" id="username" value="" />
+        <label for="pass">密码:</label>
+        <!--<input>标签为输入框，name：为文本框命名，以备后台程序ASP 、PHP使用。value：为文本输入框设置默认值。(一般起到提示作用)
+        当type="text"时，输入框为文本输入框;当type="password"时, 输入框为密码输入框。当type值设置为reset时，按钮才有重置作用；当type值设置为submit时，按钮才有提交作用
+         -->
+        <input type="password"  name="pass" id="pass" value="" />
+        <input type="submit" value="确定"  name="submit" />
+        <input type="reset" value="重置" name="reset" />
+        <br>
+        <hr>
+        <label>个人简介：</label>
+        <!--<textarea>为多行文本输入标签，cols ：多行输入域的列数。rows ：多行输入域的行数。 -->
+        <textarea rows="4" cols="50">在这里输入内容哦</textarea>
+        <br>
+        <hr>
+        <label>筛选活动排期:</label>
+        <select>
+            <option value="网页开发">网页开发</option>
+            <option value="网站建设">网站建设</option>
+            <option value="微信公众号开发">微信公众号开发</option>
+            <option value="小程序">小程序</option>
+        </select>
+    </form>
+</div>
+<br>
+<hr>
+<div>
+    <!--<audio> 标签定义声音，比如音乐或其他音频流,src里面的音乐格式最好是mp3，它兼容所有的浏览器，controls属性是显示控制音乐的控制按钮 -->
+    <audio  controls="controls" src="http://hackweek.oss-cn-shanghai.aliyuncs.com/t/audio/zaowuzhe.mp3"></audio>
+</div>
+<br>
+<hr>
+<div>
+    <!--<video> 标签定义视频，比如电影片段或其他视频流，src里面的音乐格式最好是mp4，它兼容所有的浏览器，controls属性是显示控制视频的控制按钮 -->
+    <video controls="controls" src="http://hackweek.oss-cn-shanghai.aliyuncs.com/t/audio/video.mp4" width="300"></video>
+</div>
+<!--footer标签声明这个是网页的底部，通常会保护作者、联系方式、版权、相关文件等 -->
+<footer>
+    <!--般网页中会有一些网站的联系地址信息需要在网页中展示出来，这些联系地址信息如公司的地址就可以<address>标签。也可以定义一个地址（比如电子邮件地址）、签名或者文档的作者身份。 -->
+    <address>
+        <!--<a>标签还有一个作用是可以链接Email地址，使用mailto能让访问者便捷向网站管理者发送电子邮件。 -->
+        ©️版权 <a href="mailto:code@hackweek.org">HackWeek技术组</a>.<br>
+    </address>
+</footer>
+</body>
+</html>
